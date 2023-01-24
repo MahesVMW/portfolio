@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio website l</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init("n5WQQM4PWmRKY45jP");
+      })();
+   </script>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="./profile .jpeg" alt="">
+        <h3 class="name">Mahes waran</h3>
+        <p class="post">front end developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>hi there...</h3>
+        <h3 class="name">my name is <span>Mahes waran</span></h3>
+        <h3 class="post">i am a <span class="typing-text">front end developer</span></h3>
+
+       
+        <a href="#"><button class="btn">Download CV</button></a>
+
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100025651733100" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/mahes_waran_vmw/" class="fab fa-instagram"></a>
+            <a href="www.linkedin.com/in/mahes-waran2203" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about me</h1>
+
+        <div class="content">
+            <h3 class="name">my name is <span>Mahes waran</span></h3>
+            <p>Strong in designing and initiative in problem solving skills.Proficiency in HTML, CSS, JavaScript, and Angular10.</p>
+            <p>Passionate about in creating responsive and adaptive web designs.Ability to translate business requirements into technical solutions.Looking to start my career as a Frontend Developer with a reputed firm driven by technology.</p>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>html <span>95%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>css <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>javascript <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Angular10 <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- service section  -->
+    <section class="service" id="Project">
+
+        <h1 class="heading">my Projects</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+               <h1 style="color: white;font-size: 25px;">E-commerce website</h1>
+                <p>In this E-commerce website you can select the product and add to the wishlist and you can see product details and customers can leave their queries in the contact form that I can see in my Mail.Tools that I have used in the project HTML,CSS,BOOTSTRAP,ANGULAR</p>
+            </div>
+
+           
+
+            <div class="box">
+                <h1 style="color: white;font-size: 25px;">Todo App</h1>
+                <p>This todo app help us to remember some important task. We just add the task and when accomplished,we can delete them.Using BOOTSTRAP classes it looks attractive and also responsive.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- education section  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">my education</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="year">2016</div>
+                <h3>SSLC</h3>
+                <p>Completed SSLC in SPM oxford matric higher secondary school,oddanchatram with 94%.</p>
+            </div>
+
+            <div class="box">
+                <div class="year">2018</div>
+                <h3>HSC</h3>
+                <p>Completed HSC in SPM oxford matric higher secondary school,oddanchatram with 84%.</p>
+            </div>
+
+            <div class="box">
+                <div class="year">2018 - 2021</div>
+                <h3>UG Graduation</h3>
+                <p>Studied BCA at Gurunanak college,chennai with CGPA of 7.7</p>
+            </div>
+
+            <div class="box">
+                <div class="year">2022-2023</div>
+                <h3>front end development</h3>
+                <p>Pursuing MEAN stack development at IT vedant institute,chennai and completed Web designing and Angular10.  </p>
+
+        </div>
+
+    </section>
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">contact me</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" class="box" id="fromName" placeholder="first name">
+                <input type="email" class="box" id="mail" placeholder="your email">
+                <textarea name=""  cols="30" rows="10" class="box message" id="message" placeholder="message"></textarea>
+                <input type="submit" value="message" class="btn"onclick="sendMail()">
+            </form>
+
+            <div class="content">
+                <div class="icons">
+                    <h3><i class="fas fa-map-marker-alt"></i> address </h3>
+                    <p>123/3,south street,<br>Markkampatti,<br>oddanchatram,<br>Dindugal 624712</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> email </h3>
+                    <p>maheswaran2220@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-phone"></i> phone </h3>
+                    <p>6379447978</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+ function sendMail() {
+    alert("start");
+    var fname = document.getElementById("fromName").value;
+    var cname = document.getElementById("mail").value;
+    var comm = document.getElementById("message").value;
+    alert(fname);
+    alert(cname);
+    alert("here");
+    var templateParams = {
+
+        from_name: fname,
+        to_name: cname,
+        message: comm,
+
+    };
+
+    emailjs.send('service_luchac8', 'template_qtkm6ko', templateParams)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert("Form Submitted Successfully!");
+            return true;
+        }, function (error) {
+            console.log('FAILED...', error);
+        });
+
+}
+   
+
+</script>
+
+</body>
+</html>
